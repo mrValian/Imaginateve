@@ -1,0 +1,13 @@
+.b-header {
+    background-color: $colorWhite;
+    border-bottom: 1px solid $colorCrimson;
+    height: 50px;
+    
+    @include media-breakpoint-down(sm) {
+        height: 100px;
+    }
+    
+    &_position {
+        position: relative;
+    }
+}

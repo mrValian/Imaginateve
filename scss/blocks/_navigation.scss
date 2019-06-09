@@ -1,0 +1,28 @@
+.b-navigation {
+    height: 50px;
+    line-height: 50px;
+
+    &__link {
+        color: $colorCrimson;
+        font-size: 12px;
+        font-weight: 400;
+
+        &:hover {
+            color: $colorGray;
+        }
+    }
+
+    &__line {
+        color: $colorCrimson;
+    }
+
+    &_position {
+        position: absolute;
+        right: 20px;
+    }
+    
+    @include media-breakpoint-down(sm) {
+        left: 20px;
+        top: 50px;
+    }
+}

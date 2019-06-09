@@ -1,0 +1,39 @@
+.b-SecondCaption {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: $colorMineShaft;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+
+    &__span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 5px;
+        background-color: $colorGallery;
+        position: relative;
+    }
+
+    &:before {
+        margin-left: -100%;
+        left: -14px;
+    }
+
+    &:after {
+        margin-right: -100%;
+        right: -14px;
+    }
+    
+    &_decoration {
+        margin-bottom: 40px;
+    }
+}

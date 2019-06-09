@@ -1,0 +1,46 @@
+.b-peopleTitle {
+
+    &__img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        float: left;
+        margin-right: 18px;
+    }
+
+    &__wrapInform {
+        overflow: hidden;
+    }
+
+    &__caption {
+        color: $colorMineShaft;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    &__desc {
+        color: $colorMoreGray;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: 14px;
+    }
+
+    &__link {
+        color: $colorCrimson;
+        font-size: 13px;
+        font-weight: 400;
+
+        &:hover {
+            color: $colorMoreGray;
+        }
+    }
+
+    &_decoration {
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.b-searchForm {
+
+    &__text {
+        float: left;
+        background-color: $colorWhite;
+        width: 218px;
+        height: 33px;
+        color: $colorMoreGray;
+        font-size: 12px;
+        font-weight: 400;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        outline: none;
+        border: none;
+        
+        @include media-breakpoint-down(xs) {
+            width: 160px;
+        }
+    }
+
+    &__submit {
+        background-color: $colorCrimson;
+        width: 75px;
+        height: 33px;
+        outline: none;
+        border: none;
+        text-transform: uppercase;
+        color: $colorWhite;
+        font-size: 12px;
+        font-weight: 400;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+    }
+}

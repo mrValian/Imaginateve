@@ -1,0 +1,42 @@
+.b-companyDetails {
+
+    &__caption {
+        color: $colorMineShaft;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: $colorMoreGray;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        color: $colorCrimson;
+        font-size: 12px;
+        font-weight: 400;
+
+        &:hover {
+            color: $colorGray;
+        }
+    }
+
+    &__textSpan {
+        color: $colorMoreGray;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    &_margine {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+    }
+}

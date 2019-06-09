@@ -1,0 +1,37 @@
+.b-ceo {
+
+    &__wrapAutor {
+        overflow: hidden;
+    }
+
+    &__autorImg {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__autorName {
+        color: $colorMineShaft;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 6px;
+    }
+
+    &__autorLink {
+        color: $colorCrimson;
+        font-size: 13px;
+        font-weight: 400;
+
+        &:hover {
+            color: $colorMoreGray;
+        }
+    }
+
+    &__text {
+        color: $colorMoreGray;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+}

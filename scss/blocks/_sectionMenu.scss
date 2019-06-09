@@ -1,0 +1,16 @@
+.b-sectionMenu {
+    background-color: $colorGray;
+    
+    &__twoItem {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+    }
+}

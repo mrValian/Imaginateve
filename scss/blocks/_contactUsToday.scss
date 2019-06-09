@@ -1,0 +1,52 @@
+.b-contactUsToday {
+    padding: 30px 23px;
+    box-sizing: border-box;
+    background-color: $colorCrimson;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__block {}
+
+    &__caption {
+        color: $colorWhiteGray;
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    &__desc {
+        color: $colorWhiteGray;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    &__link {
+        background-color: $colorWhite;
+        width: 279px;
+        height: 58px;
+        line-height: 58px;
+        color: $colorCrimson;
+        font-size: 26px;
+        font-weight: 400;
+        text-align: center;
+        border-radius: 5px;
+        text-transform: uppercase;
+        display: block;
+        
+        &_decoration {
+            @include media-breakpoint-down(lg) {
+            margin-top: 20px;
+        }
+        }
+    }
+    
+    &_decoration {
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+        }
+    }
+}

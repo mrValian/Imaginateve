@@ -1,0 +1,41 @@
+.b-socialWrapper {
+    list-style-type: none;
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+
+    &__item {
+        background-color: $colorGray;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: $colorJaffa;
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $colorWhite;
+
+        &:hover {
+            color: $colorWhite;
+        }
+    }
+    
+    &_position {
+        position: absolute;
+        left: 20px;
+    }
+}

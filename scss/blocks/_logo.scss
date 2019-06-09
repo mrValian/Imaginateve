@@ -1,0 +1,32 @@
+.b-logo {
+    display: flex;
+
+    &__caption {
+        color: $colorMineShaft;
+        font-size: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 0;
+
+        &:first-letter {
+            font-size: 36px;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 0;
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid $colorMoreGray;
+        color: $colorMoreGray;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    
+    &_decoration {
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 20px;
+        }
+    }
+}
